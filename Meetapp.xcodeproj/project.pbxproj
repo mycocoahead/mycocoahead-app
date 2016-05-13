@@ -8,20 +8,106 @@
 
 /* Begin PBXBuildFile section */
 		A30DC7881CE615490078DF03 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A30DC7871CE615490078DF03 /* AppDelegate.swift */; };
-		A30DC78A1CE615490078DF03 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A30DC7891CE615490078DF03 /* ViewController.swift */; };
-		A30DC78D1CE615490078DF03 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A30DC78B1CE615490078DF03 /* Main.storyboard */; };
+		A30DC78A1CE615490078DF03 /* LatestEventsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A30DC7891CE615490078DF03 /* LatestEventsViewController.swift */; };
 		A30DC78F1CE615490078DF03 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A30DC78E1CE615490078DF03 /* Assets.xcassets */; };
 		A30DC7921CE615490078DF03 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A30DC7901CE615490078DF03 /* LaunchScreen.storyboard */; };
+		A30DC7A21CE619160078DF03 /* BaseAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = A30DC7A11CE619160078DF03 /* BaseAPI.swift */; };
+		A30DC7BD1CE61A960078DF03 /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = A30DC7BC1CE61A960078DF03 /* R.generated.swift */; };
+		A30DC7BF1CE61B5D0078DF03 /* Rswift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A30DC7AD1CE61A2C0078DF03 /* Rswift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		A30DC7D11CE61EF50078DF03 /* EventsRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A30DC7D01CE61EF50078DF03 /* EventsRequest.swift */; };
+		A30DC7D41CE622640078DF03 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = A30DC7D31CE622640078DF03 /* Event.swift */; };
+		A3ACC82E1CE6350700BC4105 /* CalenderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3ACC82D1CE6350700BC4105 /* CalenderViewController.swift */; };
+		A3D9B4F01CE6515600CA1E11 /* AFDateHelper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3D9B4EA1CE6515600CA1E11 /* AFDateHelper.framework */; };
+		A3D9B4F11CE6515600CA1E11 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3D9B4EB1CE6515600CA1E11 /* Alamofire.framework */; };
+		A3D9B4F21CE6515600CA1E11 /* CVCalendar.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3D9B4EC1CE6515600CA1E11 /* CVCalendar.framework */; };
+		A3D9B4F31CE6515600CA1E11 /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3D9B4ED1CE6515600CA1E11 /* Realm.framework */; };
+		A3D9B4F41CE6515600CA1E11 /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3D9B4EE1CE6515600CA1E11 /* RealmSwift.framework */; };
+		A3D9B4F51CE6515600CA1E11 /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3D9B4EF1CE6515600CA1E11 /* SwiftyJSON.framework */; };
+		A3D9B4F71CE65ABC00CA1E11 /* EventCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A3D9B4F61CE65ABC00CA1E11 /* EventCell.xib */; };
+		A3D9B4F91CE65B3900CA1E11 /* EventCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3D9B4F81CE65B3900CA1E11 /* EventCell.swift */; };
+		A3D9B4FC1CE660E800CA1E11 /* EventDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3D9B4FB1CE660E800CA1E11 /* EventDetailsViewController.swift */; };
+		A3D9B4FE1CE666D500CA1E11 /* MapsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3D9B4FD1CE666D500CA1E11 /* MapsViewController.swift */; };
+		A3D9B5001CE6674E00CA1E11 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3D9B4FF1CE6674E00CA1E11 /* MapKit.framework */; };
+		A3D9B5041CE68C1800CA1E11 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A3D9B5011CE68BF200CA1E11 /* Main.storyboard */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A30DC7AC1CE61A2C0078DF03 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A30DC7A51CE61A2C0078DF03 /* R.swift.Library.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D592464E1C117A55007F94C7;
+			remoteInfo = "Rswift-iOS";
+		};
+		A30DC7AE1CE61A2C0078DF03 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A30DC7A51CE61A2C0078DF03 /* R.swift.Library.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D59246581C117A55007F94C7;
+			remoteInfo = "RswiftTests-iOS";
+		};
+		A30DC7B01CE61A2C0078DF03 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A30DC7A51CE61A2C0078DF03 /* R.swift.Library.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 806E69921C42BD9C00DE3A8B;
+			remoteInfo = "Rswift-tvOS";
+		};
+		A30DC7B21CE61A2C0078DF03 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A30DC7A51CE61A2C0078DF03 /* R.swift.Library.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 806E699B1C42BD9C00DE3A8B;
+			remoteInfo = "RswiftTests-tvOS";
+		};
+		A30DC7C01CE61B5D0078DF03 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A30DC7A51CE61A2C0078DF03 /* R.swift.Library.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = D592464D1C117A55007F94C7;
+			remoteInfo = "Rswift-iOS";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		A30DC7C21CE61B5D0078DF03 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				A30DC7BF1CE61B5D0078DF03 /* Rswift.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		A30DC7841CE615490078DF03 /* Meetapp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Meetapp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A30DC7871CE615490078DF03 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		A30DC7891CE615490078DF03 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		A30DC78C1CE615490078DF03 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A30DC7891CE615490078DF03 /* LatestEventsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LatestEventsViewController.swift; sourceTree = "<group>"; };
 		A30DC78E1CE615490078DF03 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A30DC7911CE615490078DF03 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A30DC7931CE615490078DF03 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A30DC7A11CE619160078DF03 /* BaseAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseAPI.swift; sourceTree = "<group>"; };
+		A30DC7A51CE61A2C0078DF03 /* R.swift.Library.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = R.swift.Library.xcodeproj; path = "R.swift.Library-2.1.0/R.swift.Library.xcodeproj"; sourceTree = "<group>"; };
+		A30DC7BC1CE61A960078DF03 /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = SOURCE_ROOT; };
+		A30DC7D01CE61EF50078DF03 /* EventsRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventsRequest.swift; sourceTree = "<group>"; };
+		A30DC7D31CE622640078DF03 /* Event.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Event.swift; path = Model/Event.swift; sourceTree = "<group>"; };
+		A3ACC82D1CE6350700BC4105 /* CalenderViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalenderViewController.swift; sourceTree = "<group>"; };
+		A3D9B4EA1CE6515600CA1E11 /* AFDateHelper.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AFDateHelper.framework; path = ../../Carthage/Build/iOS/AFDateHelper.framework; sourceTree = "<group>"; };
+		A3D9B4EB1CE6515600CA1E11 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = ../../Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
+		A3D9B4EC1CE6515600CA1E11 /* CVCalendar.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CVCalendar.framework; path = ../../Carthage/Build/iOS/CVCalendar.framework; sourceTree = "<group>"; };
+		A3D9B4ED1CE6515600CA1E11 /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Realm.framework; path = ../../Carthage/Build/iOS/Realm.framework; sourceTree = "<group>"; };
+		A3D9B4EE1CE6515600CA1E11 /* RealmSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RealmSwift.framework; path = ../../Carthage/Build/iOS/RealmSwift.framework; sourceTree = "<group>"; };
+		A3D9B4EF1CE6515600CA1E11 /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = ../../Carthage/Build/iOS/SwiftyJSON.framework; sourceTree = "<group>"; };
+		A3D9B4F61CE65ABC00CA1E11 /* EventCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EventCell.xib; sourceTree = "<group>"; };
+		A3D9B4F81CE65B3900CA1E11 /* EventCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventCell.swift; sourceTree = "<group>"; };
+		A3D9B4FB1CE660E800CA1E11 /* EventDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventDetailsViewController.swift; sourceTree = "<group>"; };
+		A3D9B4FD1CE666D500CA1E11 /* MapsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapsViewController.swift; sourceTree = "<group>"; };
+		A3D9B4FF1CE6674E00CA1E11 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		A3D9B5021CE68BF200CA1E11 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +115,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A3D9B5001CE6674E00CA1E11 /* MapKit.framework in Frameworks */,
+				A3D9B4F01CE6515600CA1E11 /* AFDateHelper.framework in Frameworks */,
+				A3D9B4F11CE6515600CA1E11 /* Alamofire.framework in Frameworks */,
+				A3D9B4F21CE6515600CA1E11 /* CVCalendar.framework in Frameworks */,
+				A3D9B4F31CE6515600CA1E11 /* Realm.framework in Frameworks */,
+				A3D9B4F41CE6515600CA1E11 /* RealmSwift.framework in Frameworks */,
+				A3D9B4F51CE6515600CA1E11 /* SwiftyJSON.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -55,13 +148,89 @@
 			isa = PBXGroup;
 			children = (
 				A30DC7871CE615490078DF03 /* AppDelegate.swift */,
-				A30DC7891CE615490078DF03 /* ViewController.swift */,
-				A30DC78B1CE615490078DF03 /* Main.storyboard */,
+				A30DC7A41CE619BB0078DF03 /* Assets */,
+				A30DC7A31CE619AA0078DF03 /* Controllers */,
+				A30DC79B1CE618AF0078DF03 /* Frameworks */,
+				A30DC7D21CE622510078DF03 /* Model */,
+				A30DC7A01CE618EF0078DF03 /* NetworkRequest */,
 				A30DC78E1CE615490078DF03 /* Assets.xcassets */,
-				A30DC7901CE615490078DF03 /* LaunchScreen.storyboard */,
 				A30DC7931CE615490078DF03 /* Info.plist */,
 			);
 			path = Meetapp;
+			sourceTree = "<group>";
+		};
+		A30DC79B1CE618AF0078DF03 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A3D9B4FF1CE6674E00CA1E11 /* MapKit.framework */,
+				A3D9B4EA1CE6515600CA1E11 /* AFDateHelper.framework */,
+				A3D9B4EB1CE6515600CA1E11 /* Alamofire.framework */,
+				A3D9B4EC1CE6515600CA1E11 /* CVCalendar.framework */,
+				A3D9B4ED1CE6515600CA1E11 /* Realm.framework */,
+				A3D9B4EE1CE6515600CA1E11 /* RealmSwift.framework */,
+				A3D9B4EF1CE6515600CA1E11 /* SwiftyJSON.framework */,
+				A30DC7A51CE61A2C0078DF03 /* R.swift.Library.xcodeproj */,
+			);
+			path = Frameworks;
+			sourceTree = "<group>";
+		};
+		A30DC7A01CE618EF0078DF03 /* NetworkRequest */ = {
+			isa = PBXGroup;
+			children = (
+				A30DC7A11CE619160078DF03 /* BaseAPI.swift */,
+				A30DC7D01CE61EF50078DF03 /* EventsRequest.swift */,
+			);
+			path = NetworkRequest;
+			sourceTree = "<group>";
+		};
+		A30DC7A31CE619AA0078DF03 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				A30DC7891CE615490078DF03 /* LatestEventsViewController.swift */,
+				A3ACC82D1CE6350700BC4105 /* CalenderViewController.swift */,
+				A3D9B4FB1CE660E800CA1E11 /* EventDetailsViewController.swift */,
+				A3D9B4FD1CE666D500CA1E11 /* MapsViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		A30DC7A41CE619BB0078DF03 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				A30DC7BC1CE61A960078DF03 /* R.generated.swift */,
+				A30DC7901CE615490078DF03 /* LaunchScreen.storyboard */,
+				A3D9B5011CE68BF200CA1E11 /* Main.storyboard */,
+				A3D9B4FA1CE65B3D00CA1E11 /* Event */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		A30DC7A61CE61A2C0078DF03 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A30DC7AD1CE61A2C0078DF03 /* Rswift.framework */,
+				A30DC7AF1CE61A2C0078DF03 /* RswiftTests-iOS.xctest */,
+				A30DC7B11CE61A2C0078DF03 /* Rswift.framework */,
+				A30DC7B31CE61A2C0078DF03 /* RswiftTests-tvOS.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A30DC7D21CE622510078DF03 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A30DC7D31CE622640078DF03 /* Event.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		A3D9B4FA1CE65B3D00CA1E11 /* Event */ = {
+			isa = PBXGroup;
+			children = (
+				A3D9B4F61CE65ABC00CA1E11 /* EventCell.xib */,
+				A3D9B4F81CE65B3900CA1E11 /* EventCell.swift */,
+			);
+			name = Event;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,13 +240,17 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A30DC7961CE615490078DF03 /* Build configuration list for PBXNativeTarget "Meetapp" */;
 			buildPhases = (
+				A30DC7B51CE61A530078DF03 /* R.swift */,
 				A30DC7801CE615490078DF03 /* Sources */,
 				A30DC7811CE615490078DF03 /* Frameworks */,
 				A30DC7821CE615490078DF03 /* Resources */,
+				A30DC7C21CE61B5D0078DF03 /* Embed Frameworks */,
+				A30DC7CB1CE61C130078DF03 /* Carthage */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				A30DC7C11CE61B5D0078DF03 /* PBXTargetDependency */,
 			);
 			name = Meetapp;
 			productName = Meetapp;
@@ -110,6 +283,12 @@
 			mainGroup = A30DC77B1CE615490078DF03;
 			productRefGroup = A30DC7851CE615490078DF03 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = A30DC7A61CE61A2C0078DF03 /* Products */;
+					ProjectRef = A30DC7A51CE61A2C0078DF03 /* R.swift.Library.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				A30DC7831CE615490078DF03 /* Meetapp */,
@@ -117,46 +296,132 @@
 		};
 /* End PBXProject section */
 
+/* Begin PBXReferenceProxy section */
+		A30DC7AD1CE61A2C0078DF03 /* Rswift.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Rswift.framework;
+			remoteRef = A30DC7AC1CE61A2C0078DF03 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		A30DC7AF1CE61A2C0078DF03 /* RswiftTests-iOS.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "RswiftTests-iOS.xctest";
+			remoteRef = A30DC7AE1CE61A2C0078DF03 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		A30DC7B11CE61A2C0078DF03 /* Rswift.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Rswift.framework;
+			remoteRef = A30DC7B01CE61A2C0078DF03 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		A30DC7B31CE61A2C0078DF03 /* RswiftTests-tvOS.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "RswiftTests-tvOS.xctest";
+			remoteRef = A30DC7B21CE61A2C0078DF03 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
 /* Begin PBXResourcesBuildPhase section */
 		A30DC7821CE615490078DF03 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A3D9B5041CE68C1800CA1E11 /* Main.storyboard in Resources */,
+				A3D9B4F71CE65ABC00CA1E11 /* EventCell.xib in Resources */,
 				A30DC7921CE615490078DF03 /* LaunchScreen.storyboard in Resources */,
 				A30DC78F1CE615490078DF03 /* Assets.xcassets in Resources */,
-				A30DC78D1CE615490078DF03 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		A30DC7B51CE61A530078DF03 /* R.swift */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = R.swift;
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"$SRCROOT/rswift\" \"$SRCROOT\"";
+		};
+		A30DC7CB1CE61C130078DF03 /* Carthage */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/Alamofire.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/SwiftyJSON.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/AFDateHelper.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/CVCalendar.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Realm.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/RealmSwift.framework",
+			);
+			name = Carthage;
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		A30DC7801CE615490078DF03 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A30DC78A1CE615490078DF03 /* ViewController.swift in Sources */,
+				A30DC7D11CE61EF50078DF03 /* EventsRequest.swift in Sources */,
+				A30DC7A21CE619160078DF03 /* BaseAPI.swift in Sources */,
+				A30DC78A1CE615490078DF03 /* LatestEventsViewController.swift in Sources */,
 				A30DC7881CE615490078DF03 /* AppDelegate.swift in Sources */,
+				A3D9B4F91CE65B3900CA1E11 /* EventCell.swift in Sources */,
+				A3D9B4FE1CE666D500CA1E11 /* MapsViewController.swift in Sources */,
+				A3ACC82E1CE6350700BC4105 /* CalenderViewController.swift in Sources */,
+				A3D9B4FC1CE660E800CA1E11 /* EventDetailsViewController.swift in Sources */,
+				A30DC7D41CE622640078DF03 /* Event.swift in Sources */,
+				A30DC7BD1CE61A960078DF03 /* R.generated.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
-/* Begin PBXVariantGroup section */
-		A30DC78B1CE615490078DF03 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				A30DC78C1CE615490078DF03 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
+/* Begin PBXTargetDependency section */
+		A30DC7C11CE61B5D0078DF03 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Rswift-iOS";
+			targetProxy = A30DC7C01CE61B5D0078DF03 /* PBXContainerItemProxy */;
 		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
 		A30DC7901CE615490078DF03 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				A30DC7911CE615490078DF03 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			path = .;
+			sourceTree = "<group>";
+		};
+		A3D9B5011CE68BF200CA1E11 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A3D9B5021CE68BF200CA1E11 /* Base */,
+			);
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -251,6 +516,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+					"$(PROJECT_DIR)/Meetapp/Frameworks",
+				);
 				INFOPLIST_FILE = Meetapp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.alienxp03.Meetapp;
@@ -262,6 +533,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+					"$(PROJECT_DIR)/Meetapp/Frameworks",
+				);
 				INFOPLIST_FILE = Meetapp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.alienxp03.Meetapp;
@@ -288,6 +565,7 @@
 				A30DC7981CE615490078DF03 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

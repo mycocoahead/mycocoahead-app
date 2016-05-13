@@ -1,2 +1,5 @@
-# mycocoahead-app
-iOS App for MyCocoahead community.
+# MyCocoaHeads - iOS App
+- iOS App for MyCocoahead community.
+
+
+## iOS Apps for tech events discovery

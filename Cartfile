@@ -1,0 +1,5 @@
+github "SwiftyJSON/SwiftyJSON"
+github "Alamofire/Alamofire" ~> 3.4
+github "melvitax/AFDateHelper"
+github "Mozharovsky/CVCalendar"
+github "realm/realm-cocoa"
