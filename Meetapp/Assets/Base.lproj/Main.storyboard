@@ -26,7 +26,7 @@
                                         <rect key="frame" x="0.0" y="92" width="600" height="65"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="88O-DF-kHk" id="y7m-vn-wWG">
-                                            <rect key="frame" x="0.0" y="0.0" width="600" height="64.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="65"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
                                     </tableViewCell>
@@ -77,7 +77,7 @@
                                 </subviews>
                                 <color key="backgroundColor" red="0.78293269230769225" green="0.78293269230769225" blue="0.78293269230769225" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="bottom" secondItem="Bgv-R7-nX8" secondAttribute="bottom" constant="49" id="D8g-nx-EDQ"/>
+                                    <constraint firstAttribute="bottom" relation="lessThanOrEqual" secondItem="Bgv-R7-nX8" secondAttribute="bottom" constant="49" id="D8g-nx-EDQ"/>
                                     <constraint firstItem="Bgv-R7-nX8" firstAttribute="leading" secondItem="FCb-WP-0Bb" secondAttribute="leading" constant="51" id="Q8Z-dO-18R"/>
                                     <constraint firstItem="Bgv-R7-nX8" firstAttribute="top" secondItem="FCb-WP-0Bb" secondAttribute="top" constant="50" id="fUz-L6-FTv"/>
                                     <constraint firstAttribute="height" constant="213" id="jVJ-dx-ebn"/>
@@ -222,7 +222,7 @@
                                         <rect key="frame" x="0.0" y="28" width="600" height="65"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="CQx-1n-Qmh" id="uhW-SJ-FGJ">
-                                            <rect key="frame" x="0.0" y="0.0" width="600" height="64.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="65"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
                                     </tableViewCell>
