@@ -26,12 +26,20 @@ struct R: Rswift.Validatable {
     private init() {}
   }
   
-  /// This `R.image` struct is generated, and contains static references to 5 images.
+  /// This `R.image` struct is generated, and contains static references to 9 images.
   struct image {
     /// Image `Calendar1`.
     static let calendar1 = ImageResource(bundle: _R.hostingBundle, name: "Calendar1")
     /// Image `Calendar2`.
     static let calendar2 = ImageResource(bundle: _R.hostingBundle, name: "Calendar2")
+    /// Image `ico_back`.
+    static let ico_back = ImageResource(bundle: _R.hostingBundle, name: "ico_back")
+    /// Image `ico_back_black`.
+    static let ico_back_black = ImageResource(bundle: _R.hostingBundle, name: "ico_back_black")
+    /// Image `ico_star`.
+    static let ico_star = ImageResource(bundle: _R.hostingBundle, name: "ico_star")
+    /// Image `ico_star_selected`.
+    static let ico_star_selected = ImageResource(bundle: _R.hostingBundle, name: "ico_star_selected")
     /// Image `List`.
     static let list = ImageResource(bundle: _R.hostingBundle, name: "List")
     /// Image `Map`.
@@ -47,6 +55,26 @@ struct R: Rswift.Validatable {
     /// `UIImage(named: "Calendar2", bundle: ..., traitCollection: ...)`
     static func calendar2(compatibleWithTraitCollection traitCollection: UITraitCollection? = nil) -> UIImage? {
       return UIImage(resource: R.image.calendar2, compatibleWithTraitCollection: traitCollection)
+    }
+    
+    /// `UIImage(named: "ico_back", bundle: ..., traitCollection: ...)`
+    static func ico_back(compatibleWithTraitCollection traitCollection: UITraitCollection? = nil) -> UIImage? {
+      return UIImage(resource: R.image.ico_back, compatibleWithTraitCollection: traitCollection)
+    }
+    
+    /// `UIImage(named: "ico_back_black", bundle: ..., traitCollection: ...)`
+    static func ico_back_black(compatibleWithTraitCollection traitCollection: UITraitCollection? = nil) -> UIImage? {
+      return UIImage(resource: R.image.ico_back_black, compatibleWithTraitCollection: traitCollection)
+    }
+    
+    /// `UIImage(named: "ico_star", bundle: ..., traitCollection: ...)`
+    static func ico_star(compatibleWithTraitCollection traitCollection: UITraitCollection? = nil) -> UIImage? {
+      return UIImage(resource: R.image.ico_star, compatibleWithTraitCollection: traitCollection)
+    }
+    
+    /// `UIImage(named: "ico_star_selected", bundle: ..., traitCollection: ...)`
+    static func ico_star_selected(compatibleWithTraitCollection traitCollection: UITraitCollection? = nil) -> UIImage? {
+      return UIImage(resource: R.image.ico_star_selected, compatibleWithTraitCollection: traitCollection)
     }
     
     /// `UIImage(named: "List", bundle: ..., traitCollection: ...)`
@@ -88,11 +116,8 @@ struct R: Rswift.Validatable {
     private init() {}
   }
   
-  /// This `R.reuseIdentifier` struct is generated, and contains static references to 1 reuse identifiers.
+  /// This `R.reuseIdentifier` struct is generated, and contains static references to 0 reuse identifiers.
   struct reuseIdentifier {
-    /// Reuse identifier `Cell`.
-    static let cell: ReuseIdentifier<EventCell> = ReuseIdentifier(identifier: "Cell")
-    
     private init() {}
   }
   
@@ -180,6 +205,9 @@ struct _R: Rswift.Validatable {
         if UIImage(named: "Map") == nil { throw ValidationError(description: "[R.swift] Image named 'Map' is used in storyboard 'Main', but couldn't be loaded.") }
         if UIImage(named: "Calendar1") == nil { throw ValidationError(description: "[R.swift] Image named 'Calendar1' is used in storyboard 'Main', but couldn't be loaded.") }
         if UIImage(named: "List") == nil { throw ValidationError(description: "[R.swift] Image named 'List' is used in storyboard 'Main', but couldn't be loaded.") }
+        if UIImage(named: "ico_back_black") == nil { throw ValidationError(description: "[R.swift] Image named 'ico_back_black' is used in storyboard 'Main', but couldn't be loaded.") }
+        if UIImage(named: "Time") == nil { throw ValidationError(description: "[R.swift] Image named 'Time' is used in storyboard 'Main', but couldn't be loaded.") }
+        if UIImage(named: "ico_star") == nil { throw ValidationError(description: "[R.swift] Image named 'ico_star' is used in storyboard 'Main', but couldn't be loaded.") }
         if _R.storyboard.main().eventDetails() == nil { throw ValidationError(description:"[R.swift] ViewController with identifier 'eventDetails' could not be loaded from storyboard 'Main' as 'EventDetailsViewController'.") }
       }
       
