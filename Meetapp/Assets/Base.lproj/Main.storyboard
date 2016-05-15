@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="fBD-Qf-Srg">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="fBD-Qf-Srg">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
@@ -26,7 +26,7 @@
                                         <rect key="frame" x="0.0" y="92" width="600" height="65"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="88O-DF-kHk" id="y7m-vn-wWG">
-                                            <rect key="frame" x="0.0" y="0.0" width="600" height="65"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="64"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
                                     </tableViewCell>
@@ -74,6 +74,10 @@
                                         <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="26"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qxI-Aq-LcG">
+                                        <rect key="frame" x="3" y="30" width="55" height="30"/>
+                                        <state key="normal" image="ico_back_black"/>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" red="0.78293269230769225" green="0.78293269230769225" blue="0.78293269230769225" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
@@ -84,10 +88,6 @@
                                     <constraint firstAttribute="trailing" secondItem="Bgv-R7-nX8" secondAttribute="trailing" constant="51" id="o66-GF-9hV"/>
                                 </constraints>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qxI-Aq-LcG">
-                                <rect key="frame" x="15" y="28" width="34" height="30"/>
-                                <state key="normal" title="Back"/>
-                            </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4Ez-FT-H0a">
                                 <rect key="frame" x="0.0" y="213" width="600" height="80"/>
                                 <subviews>
@@ -111,9 +111,49 @@
                                     <constraint firstAttribute="height" constant="80" id="qoA-5w-TdK"/>
                                 </constraints>
                             </view>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="ZCm-Wj-FRY">
+                                <rect key="frame" x="200" y="312" width="200" height="110"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nGP-Ur-50L" customClass="RCButton" customModule="Meetapp" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="200" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="E4b-Rw-gFd"/>
+                                            <constraint firstAttribute="width" constant="200" id="d6y-EX-Pxt"/>
+                                        </constraints>
+                                        <state key="normal" title="Add To Calendar"/>
+                                        <connections>
+                                            <action selector="addToCalendar:" destination="Mwd-hy-k61" eventType="touchUpInside" id="GHK-Ff-ode"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FDB-yo-i5q" customClass="RCButton" customModule="Meetapp" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="40" width="200" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="200" id="ZGX-4X-gTe"/>
+                                            <constraint firstAttribute="height" constant="30" id="zgp-1x-x8w"/>
+                                        </constraints>
+                                        <state key="normal" title="Navigate"/>
+                                        <connections>
+                                            <action selector="navigate:" destination="Mwd-hy-k61" eventType="touchUpInside" id="I4f-tQ-olX"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3v4-Zu-zEP" customClass="RCButton" customModule="Meetapp" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="80" width="200" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="200" id="G35-48-YC9"/>
+                                            <constraint firstAttribute="height" constant="30" id="O5d-a1-SGT"/>
+                                        </constraints>
+                                        <state key="normal" title="Save To Favorite"/>
+                                        <connections>
+                                            <action selector="saveFavorite:" destination="Mwd-hy-k61" eventType="touchUpInside" id="Z5X-El-SUY"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="ZCm-Wj-FRY" firstAttribute="top" secondItem="4Ez-FT-H0a" secondAttribute="bottom" constant="19" id="2m5-yU-pvh"/>
+                            <constraint firstItem="ZCm-Wj-FRY" firstAttribute="centerX" secondItem="ilq-wN-ecR" secondAttribute="centerX" id="6nx-Sm-pTj"/>
                             <constraint firstItem="FCb-WP-0Bb" firstAttribute="leading" secondItem="ilq-wN-ecR" secondAttribute="leadingMargin" constant="-20" id="A0i-g0-ABr"/>
                             <constraint firstAttribute="trailingMargin" secondItem="4Ez-FT-H0a" secondAttribute="trailing" constant="-20" id="Cgr-E4-D1W"/>
                             <constraint firstItem="4Ez-FT-H0a" firstAttribute="top" secondItem="FCb-WP-0Bb" secondAttribute="bottom" id="Nci-56-rha"/>
@@ -122,7 +162,6 @@
                             <constraint firstItem="4Ez-FT-H0a" firstAttribute="leading" secondItem="ilq-wN-ecR" secondAttribute="leadingMargin" constant="-20" id="msX-D1-C5q"/>
                         </constraints>
                     </view>
-                    <nil key="simulatedTopBarMetrics"/>
                     <connections>
                         <outlet property="back" destination="qxI-Aq-LcG" id="Q51-oP-VDd"/>
                         <outlet property="date" destination="bI1-Cg-8fU" id="cMC-We-jZQ"/>
@@ -164,7 +203,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZCP-B1-xXS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1805" y="1132"/>
+            <point key="canvasLocation" x="1817" y="1184"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="ncZ-vC-ToO">
@@ -222,7 +261,7 @@
                                         <rect key="frame" x="0.0" y="28" width="600" height="65"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="CQx-1n-Qmh" id="uhW-SJ-FGJ">
-                                            <rect key="frame" x="0.0" y="0.0" width="600" height="65"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="64"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
                                     </tableViewCell>
@@ -271,6 +310,7 @@
                         <segue destination="BHq-OH-5YU" kind="relationship" relationship="viewControllers" id="tpc-Rb-4Gv"/>
                         <segue destination="c82-K3-rmU" kind="relationship" relationship="viewControllers" id="P07-nK-P5K"/>
                         <segue destination="QJR-L5-JEV" kind="relationship" relationship="viewControllers" id="QTG-Tu-Tlb"/>
+                        <segue destination="nz4-Cg-R3H" kind="relationship" relationship="viewControllers" id="WSm-6l-aOx"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ule-eb-YFr" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -298,6 +338,71 @@
             </objects>
             <point key="canvasLocation" x="1156" y="428"/>
         </scene>
+        <!--Favorites-->
+        <scene sceneID="RN8-t6-0Hp">
+            <objects>
+                <tableViewController id="FRz-RQ-Hft" customClass="SavedEventsTableViewController" customModule="Meetapp" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="58" sectionHeaderHeight="28" sectionFooterHeight="28" id="VO4-MT-YhV">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" rowHeight="58" id="2CN-dC-aeX">
+                                <rect key="frame" x="0.0" y="92" width="600" height="58"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="2CN-dC-aeX" id="wr6-lQ-DCc">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="57"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Time" translatesAutoresizingMaskIntoConstraints="NO" id="Qdc-qs-jF9">
+                                            <rect key="frame" x="31" y="36" width="13" height="13"/>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Time" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0ns-wj-2rU">
+                                            <rect key="frame" x="52" y="32" width="330" height="21"/>
+                                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="12"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MGm-aQ-wl9">
+                                            <rect key="frame" x="31" y="9" width="355" height="21"/>
+                                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="18"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="FRz-RQ-Hft" id="V8G-Tn-Dzf"/>
+                            <outlet property="delegate" destination="FRz-RQ-Hft" id="uBC-pJ-A9O"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Favorites" id="tsp-mq-PgF"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KoM-ky-ZBW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1852" y="1938"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="aTa-c8-5wA">
+            <objects>
+                <navigationController id="nz4-Cg-R3H" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" tag="1" image="ico_star" id="Mfd-h5-M5w">
+                        <inset key="imageInsets" minX="0.0" minY="6" maxX="0.0" maxY="-6"/>
+                    </tabBarItem>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="sCx-UH-Z6S">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="FRz-RQ-Hft" kind="relationship" relationship="rootViewController" id="SWJ-q0-4kS"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LYd-a9-qpJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1156" y="1938"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="aq2-03-NW6">
             <objects>
@@ -317,12 +422,15 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zJ2-a1-Sat" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1156" y="1132"/>
+            <point key="canvasLocation" x="1156" y="1184"/>
         </scene>
     </scenes>
     <resources>
         <image name="Calendar1" width="61" height="64"/>
         <image name="List" width="32" height="32"/>
         <image name="Map" width="48" height="64"/>
+        <image name="Time" width="30" height="31"/>
+        <image name="ico_back_black" width="36" height="22"/>
+        <image name="ico_star" width="28" height="26"/>
     </resources>
 </document>

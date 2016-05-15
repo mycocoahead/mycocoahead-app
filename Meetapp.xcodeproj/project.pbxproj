@@ -16,6 +16,8 @@
 		A30DC7BF1CE61B5D0078DF03 /* Rswift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A30DC7AD1CE61A2C0078DF03 /* Rswift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		A30DC7D11CE61EF50078DF03 /* EventsRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A30DC7D01CE61EF50078DF03 /* EventsRequest.swift */; };
 		A30DC7D41CE622640078DF03 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = A30DC7D31CE622640078DF03 /* Event.swift */; };
+		A3405CE21CE82D59007EAB51 /* SavedEventsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3405CE11CE82D59007EAB51 /* SavedEventsTableViewController.swift */; };
+		A3405CE51CE82FF0007EAB51 /* RCButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3405CE41CE82FF0007EAB51 /* RCButton.swift */; };
 		A3ACC82E1CE6350700BC4105 /* CalenderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3ACC82D1CE6350700BC4105 /* CalenderViewController.swift */; };
 		A3D9B4F01CE6515600CA1E11 /* AFDateHelper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3D9B4EA1CE6515600CA1E11 /* AFDateHelper.framework */; };
 		A3D9B4F11CE6515600CA1E11 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3D9B4EB1CE6515600CA1E11 /* Alamofire.framework */; };
@@ -95,6 +97,8 @@
 		A30DC7BC1CE61A960078DF03 /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = SOURCE_ROOT; };
 		A30DC7D01CE61EF50078DF03 /* EventsRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventsRequest.swift; sourceTree = "<group>"; };
 		A30DC7D31CE622640078DF03 /* Event.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Event.swift; path = Model/Event.swift; sourceTree = "<group>"; };
+		A3405CE11CE82D59007EAB51 /* SavedEventsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SavedEventsTableViewController.swift; path = Meetapp/SavedEventsTableViewController.swift; sourceTree = SOURCE_ROOT; };
+		A3405CE41CE82FF0007EAB51 /* RCButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RCButton.swift; sourceTree = "<group>"; };
 		A3ACC82D1CE6350700BC4105 /* CalenderViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalenderViewController.swift; sourceTree = "<group>"; };
 		A3D9B4EA1CE6515600CA1E11 /* AFDateHelper.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AFDateHelper.framework; path = ../../Carthage/Build/iOS/AFDateHelper.framework; sourceTree = "<group>"; };
 		A3D9B4EB1CE6515600CA1E11 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = ../../Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
@@ -153,6 +157,7 @@
 				A30DC79B1CE618AF0078DF03 /* Frameworks */,
 				A30DC7D21CE622510078DF03 /* Model */,
 				A30DC7A01CE618EF0078DF03 /* NetworkRequest */,
+				A3405CE31CE82FE6007EAB51 /* View */,
 				A30DC78E1CE615490078DF03 /* Assets.xcassets */,
 				A30DC7931CE615490078DF03 /* Info.plist */,
 			);
@@ -190,6 +195,7 @@
 				A3ACC82D1CE6350700BC4105 /* CalenderViewController.swift */,
 				A3D9B4FB1CE660E800CA1E11 /* EventDetailsViewController.swift */,
 				A3D9B4FD1CE666D500CA1E11 /* MapsViewController.swift */,
+				A3405CE11CE82D59007EAB51 /* SavedEventsTableViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -222,6 +228,15 @@
 				A30DC7D31CE622640078DF03 /* Event.swift */,
 			);
 			name = Model;
+			sourceTree = "<group>";
+		};
+		A3405CE31CE82FE6007EAB51 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A3405CE41CE82FF0007EAB51 /* RCButton.swift */,
+			);
+			name = View;
+			path = NetworkRequest;
 			sourceTree = "<group>";
 		};
 		A3D9B4FA1CE65B3D00CA1E11 /* Event */ = {
@@ -269,6 +284,7 @@
 				TargetAttributes = {
 					A30DC7831CE615490078DF03 = {
 						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = 23A6EJTDXW;
 					};
 				};
 			};
@@ -387,7 +403,9 @@
 				A30DC7A21CE619160078DF03 /* BaseAPI.swift in Sources */,
 				A30DC78A1CE615490078DF03 /* LatestEventsViewController.swift in Sources */,
 				A30DC7881CE615490078DF03 /* AppDelegate.swift in Sources */,
+				A3405CE21CE82D59007EAB51 /* SavedEventsTableViewController.swift in Sources */,
 				A3D9B4F91CE65B3900CA1E11 /* EventCell.swift in Sources */,
+				A3405CE51CE82FF0007EAB51 /* RCButton.swift in Sources */,
 				A3D9B4FE1CE666D500CA1E11 /* MapsViewController.swift in Sources */,
 				A3ACC82E1CE6350700BC4105 /* CalenderViewController.swift in Sources */,
 				A3D9B4FC1CE660E800CA1E11 /* EventDetailsViewController.swift in Sources */,
@@ -516,6 +534,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -533,6 +552,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",

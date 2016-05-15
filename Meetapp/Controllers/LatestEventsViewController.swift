@@ -12,22 +12,35 @@ import MapKit
 
 class LatestEventsViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
-
+  
+    let refreshControl = UIRefreshControl()
     let manager = CLLocationManager()
     var events = try! Realm().objects(Event)
-    
+  
+    override func viewWillAppear(animated: Bool) {
+       navigationController?.navigationBarHidden = false
+    }
+  
     override func viewDidLoad() {
         super.viewDidLoad()
         
         manager.delegate = self
         
         tableView.registerNib(UINib(nibName: "EventCell", bundle: nil), forCellReuseIdentifier: "Cell")
-
-        EventsRequest().getAllEvents({
-            self.events = try! Realm().objects(Event)
-            self.tableView.reloadData()
-        })
+        refreshControl.attributedTitle = NSAttributedString(string: "Pull to refresh")
+        refreshControl.addTarget(self, action:"refresh:", forControlEvents: UIControlEvents.ValueChanged)
+        tableView.addSubview(refreshControl) // not required when using UITableViewController
+      
+        refresh(refreshControl)
     }
+  
+  func refresh(sender:AnyObject) {
+    EventsRequest().getAllEvents({
+      self.events = try! Realm().objects(Event)
+      self.tableView.reloadData()
+      self.refreshControl.endRefreshing()
+    })
+  }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

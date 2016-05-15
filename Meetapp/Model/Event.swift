@@ -17,6 +17,9 @@ class Event: Object {
     dynamic var desc = ""
     dynamic var startTime = NSDate(timeIntervalSince1970: 1)
     dynamic var location: Location?
+    dynamic var isFavorited = false
+
+
     
     override static func primaryKey() -> String? {
         return "id"
